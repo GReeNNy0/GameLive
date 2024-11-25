@@ -55,7 +55,7 @@ int main() {
         copyArray(pokolenie, previospokolenie, rows, colums);
         newGeneration(pokolenie, rows, colums);
         gen++;
-        system("cls");
+        (void)system("cls");
         if (Alivecells <= 0)
         {
             printSpace(pokolenie, rows, colums);
@@ -72,7 +72,7 @@ int main() {
 
     }
 
-
+    DeleteSpace(previospokolenie, rows);
     DeleteSpace(pokolenie, rows);
     return 0;
 }
